@@ -151,21 +151,37 @@ margin-bottom: 0;
 font-size: 0.625em;
 }
 
-@media only screen and(max-width: 980px){
-    body{
+@media screen and(max-width: 980px){
+    
+    header,
+    body, 
+    .mainContent, 
+    #panel,
+    .horizontalNAV{
+        max-width: 100%;
+		height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header,
+    body, 
+    .mainContent, 
+    #panel,
+    .horizontalNAV{
         width: 100%;
+		height: auto;
     }
 }
 
-@media only screen and (max-width: 768px) {
-    header, body{
-       width: 100%; 
-    }
-}
-
-@media only screen and (max-width: 640px) {
-    header, body{
-       width:100%; 
+@media screen and (max-width: 640px) {
+    header,
+    body, 
+    .mainContent, 
+    #panel,
+    .horizontalNAV{
+        width: 100%;
+		height: auto;
     }
     
     header{
